@@ -1,5 +1,5 @@
 import React from 'react';
-import { func } from 'prop-types';
+import { node } from 'prop-types';
 import CashContext from './CashContext';
 
 function CashProvider({ children }) {
@@ -12,6 +12,6 @@ function CashProvider({ children }) {
   );
 }
 
-CashProvider.propTypes = { children: func }.isRequired;
+CashProvider.propTypes = { children: node }.isRequired;
 
 export default CashProvider;
