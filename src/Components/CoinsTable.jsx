@@ -24,7 +24,9 @@ export default function CoinsTable() {
   }
 
   const subTotal = () => {
-    return Object.entries(total).reduce((acc, next) => acc + (next[0] * next[1]), 0).toFixed(2);
+    return (
+      (Object.entries(total).reduce((acc, next) => acc + (next[0] * next[1]), 0) +
+      notes.reduce((acc, next) => acc + Number(next[1]), 0)).toFixed(2));
   }
 
   const CashField = (value, key) => {
@@ -113,7 +115,7 @@ export default function CoinsTable() {
       <div>
         {notesField()}
       </div>
-      <div>
+      <div className="notesContainer">
         <ol>
           {notes.map((payValue, index) =>
             <li key={index}>{`Forma: ${payValue[0]} Valor: $${Number(payValue[1]).toFixed(2)}`}</li>
