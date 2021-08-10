@@ -26,13 +26,19 @@ export default function CoinsTable() {
   const field = (labelValue, key) => {
     return (
       <form key={ key } className={formColor[labelValue]}>
+        {`Valor: $${labelValue.toFixed(2)} `}
         <div>
-          {`$${labelValue.toFixed(2)} `}
-        </div>
-        <input
+          {'Unidade: '}
+          <input
             min={0}
             type="number"
-            onChange={ ({ target }) => handleTotal(labelValue, target.value) }/>
+            onChange={ ({ target }) => handleTotal(labelValue, target.value) }
+          />
+        </div>
+        {`Total: $${total[labelValue]
+          ? (total[labelValue]*labelValue).toFixed(2)
+          : '0.00'}`
+        }
       </form>
     )
   }
