@@ -14,41 +14,39 @@ form {
   border: 1px solid black;
 }
 
-.form-blue {
-  background-image: url(./images/turtle.jpg);
-  background-size: 170px;
-  opacity: 0.8;
+.green-text {
+  background-color: rgb( 255, 255, 255, 0.4 );
+  color: green;
+}
+
+.turtle {
+  background-image: url(./images/turtle.png);
+  background-size: cover;
 } 
 
-.form-pink {
-  background-image: url(./images/heron.jpg);
-  background-size: 170px;
-  opacity: 0.8;
+.heron {
+  background-image: url(./images/heron.png);
+  background-size: cover;
 }
-.form-red {
-  background-image: url(./images/macaw.jpg);
-  background-size: 170px;
-  opacity: 0.8;
+.macaw {
+  background-image: url(./images/macaw.png);
+  background-size: cover;
 }
-.form-yellow {
-  background-image: url(./images/tamarin.jpg);
-  background-size: 170px;
-  opacity: 0.8;
+.tamarin {
+  background-image: url(./images/tamarin.png);
+  background-size: cover;
 }
-.form-beige {
-  background-image: url(./images/Jaguar.jpg);
-  background-size: 170px;
-  opacity: 0.8;
+.jaguar {
+  background-image: url(./images/Jaguar.png);
+  background-size: cover;
 }
-.form-darkblue {
-  background-image: url(./images/grouper.jpg);
-  background-size: 170px;
-  opacity: 0.8;
+.grouper {
+  background-image: url(./images/grouper.png);
+  background-size: cover;
 }
-.form-grey {
-  background-image: url(./images/wolf.jpg);
-  background-size: 170px;
-  opacity: 0.8;
+.wolf {
+  background-image: url(./images/wolf.png);
+  background-size: cover;
 }
 
 
