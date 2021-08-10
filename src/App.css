@@ -15,26 +15,40 @@ form {
 }
 
 .form-blue {
-  background-color: aquamarine;
-}
+  background-image: url(./images/turtle.jpg);
+  background-size: 170px;
+  opacity: 0.8;
+} 
 
 .form-pink {
-  background-color: pink;
+  background-image: url(./images/heron.jpg);
+  background-size: 170px;
+  opacity: 0.8;
 }
 .form-red {
-  background-color: lightcoral;
+  background-image: url(./images/macaw.jpg);
+  background-size: 170px;
+  opacity: 0.8;
 }
 .form-yellow {
-  background-color: orange;
+  background-image: url(./images/tamarin.jpg);
+  background-size: 170px;
+  opacity: 0.8;
 }
 .form-beige {
-  background-color: burlywood;
+  background-image: url(./images/Jaguar.jpg);
+  background-size: 170px;
+  opacity: 0.8;
 }
 .form-darkblue {
-  background-color: skyblue;
+  background-image: url(./images/grouper.jpg);
+  background-size: 170px;
+  opacity: 0.8;
 }
 .form-grey {
-  background-color: grey;
+  background-image: url(./images/wolf.jpg);
+  background-size: 170px;
+  opacity: 0.8;
 }
 
 
