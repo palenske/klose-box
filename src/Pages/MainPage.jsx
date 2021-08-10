@@ -3,9 +3,9 @@ import CoinsTable from '../Components/CoinsTable';
 
 export default function Main() {
   return (
-    <div>
+    <main>
       <h1>Klose-Box</h1>
       <CoinsTable />
-    </div>
+    </main>
   )
 }

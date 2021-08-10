@@ -17,27 +17,27 @@ export default function CoinsTable() {
   const field = (labelValue, key) => {
     return (
       <form key={ key }>
-        <label>
+        <div>
           {`$${labelValue.toFixed(2)} `}
-          <input
+        </div>
+        <input
             defaultValue={0}
             min={0}
             type="number"
             onChange={ ({ target }) => handleTotal(labelValue, target.value) }/>
-        </label>
       </form>
     )
   }
 
   return (
     <>
-      <span>{`Valor total $${subTotal()}`}</span>
-      <div>
-        <h3>Moedas</h3>
+      <span>{`Sub-total $${subTotal()}`}</span>
+      <h3>Moedas</h3>
+      <div className="currencyContainer">
         {currency.map((value, index) => field(value, `C${index}`))}
       </div>
-      <div>
-        <h3>Notas</h3>
+      <h3>Cédulas</h3>
+      <div className="banknoteContainer">
         {banknote.map((value, index) => field(value, `B${index}`))}
       </div>
     </>
