@@ -13,15 +13,23 @@ export default function CoinsTable() {
 
   const currency = [0.01, 0.05, 0.10, 0.25, 0.50, 1];
   const banknote = [2, 5, 10, 20, 50, 100, 200];
+  const formColor = {
+    2: 'form-blue',
+    5: 'form-pink',
+    10: 'form-red',
+    20: 'form-yellow',
+    50: 'form-beige',
+    100: 'form-darkblue',
+    200: 'form-grey',
+  }
 
   const field = (labelValue, key) => {
     return (
-      <form key={ key }>
+      <form key={ key } className={formColor[labelValue]}>
         <div>
           {`$${labelValue.toFixed(2)} `}
         </div>
         <input
-            defaultValue={0}
             min={0}
             type="number"
             onChange={ ({ target }) => handleTotal(labelValue, target.value) }/>

@@ -5,6 +5,7 @@ main {
 }
 
 form {
+  background-color: silver;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +13,31 @@ form {
   padding: 10px;
   border: 1px solid black;
 }
+
+.form-blue {
+  background-color: aquamarine;
+}
+
+.form-pink {
+  background-color: pink;
+}
+.form-red {
+  background-color: lightcoral;
+}
+.form-yellow {
+  background-color: orange;
+}
+.form-beige {
+  background-color: burlywood;
+}
+.form-darkblue {
+  background-color: skyblue;
+}
+.form-grey {
+  background-color: grey;
+}
+
+
 
 input {
   width: 40px;
