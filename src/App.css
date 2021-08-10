@@ -1,4 +1,4 @@
-main {
+.center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +12,20 @@ form {
   margin: 10px;
   padding: 10px;
   border: 1px solid black;
+}
+
+input {
+  width: 40px;
+}
+
+.currencyContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.banknoteContainer {
+  display: flex;
+  flex-direction: row;
 }
 
 .green-text {
@@ -47,25 +61,4 @@ form {
 .wolf {
   background-image: url(./images/wolf.png);
   background-size: cover;
-}
-
-
-
-input {
-  width: 40px;
-}
-
-.banknoteContainer {
-  display: flex;
-  flex-direction: row;
-}
-
-.currencyContainer {
-  display: flex;
-  flex-direction: row;
-}
-
-.notes {
-  display: flex;
-  flex-direction: row;
 }
