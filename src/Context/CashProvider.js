@@ -5,7 +5,7 @@ import CashContext from './CashContext';
 function CashProvider({ children }) {
   const [total, setTotal] = useState(0.00);
   const [notes, setNotes] = useState([]);
-  const [radioCheck, setRadioCheck] = useState('other');
+  const [radioCheck, setRadioCheck] = useState('Other');
   const currency = [0.01, 0.05, 0.10, 0.25, 0.50, 1];
   const banknote = {
     2: 'turtle',

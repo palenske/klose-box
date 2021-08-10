@@ -18,6 +18,24 @@ input {
   width: 40px;
 }
 
+.radios-in input {
+  width: auto;
+}
+
+.white {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.grey {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
 .currencyContainer {
   display: flex;
   flex-direction: row;

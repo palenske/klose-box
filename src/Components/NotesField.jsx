@@ -22,8 +22,8 @@ export default function NotesField() {
             }}
           />
         </label>
-        <div>
-          <label htmlFor="pix">
+        <div className="radios-in">
+          <label htmlFor="Pix">
             <input
               type="radio"
               name="PayType"
@@ -32,7 +32,7 @@ export default function NotesField() {
             />
             Pix
           </label>
-          <label htmlFor="picPay">
+          <label htmlFor="PicPay">
             <input
               type="radio"
               name="PayType"
@@ -41,7 +41,7 @@ export default function NotesField() {
             />
             PicPay
           </label>
-          <label htmlFor="other">
+          <label htmlFor="Other">
             <input
               defaultChecked
               type="radio"
@@ -52,24 +52,23 @@ export default function NotesField() {
             Other
           </label>
         </div>
+        <div className="notesContainer">
+          <ol>
+            {notes.map((payValue, index) => (
+              <li key={notes.indexOf(payValue)} className={index % 2 === 0 ? 'white' : 'grey'}>
+                <span style={{width: '100px'}}>{`Forma: ${payValue[0]}`}</span>
+                <span>{`Valor: $${Number(payValue[1]).toFixed(2)}`}</span>
+                <button
+                  type="button"
+                  onClick={() => deleteNotes(notes.indexOf(payValue))}
+                >
+                  X
+                </button>
+              </li>
+            ))}
+          </ol>
+        </div>
       </form>
-      <div className="notesContainer">
-        <ol>
-          {notes.map((payValue) => (
-            <li key={notes.indexOf(payValue)}>
-              {`Forma: ${payValue[0]} Valor: $${Number(payValue[1]).toFixed(
-                2
-              )} `}
-              <button
-                type="button"
-                onClick={() => deleteNotes(notes.indexOf(payValue))}
-              >
-                X
-              </button>
-            </li>
-          ))}
-        </ol>
-      </div>
     </>
   );
 }
